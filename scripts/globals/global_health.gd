@@ -23,6 +23,11 @@ func damage_player (hit_vlaue : int) :
 	else :
 		kill_player()
 
+func heal_player (heal_vlaue : int) :
+	if current_hp > 0:
+		current_hp += heal_vlaue
+	else :
+		kill_player()
 
 func kill_player () :
 	get_tree().quit() 

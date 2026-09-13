@@ -93,3 +93,4 @@ lclick={
 
 textures/canvas_textures/default_texture_filter=2
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.060552046, 0.0583829, 0.19482368, 1)

@@ -4,13 +4,12 @@ const SPEED = 300.0
 
 
 func _physics_process(_delta: float) -> void:
-	
-	#
-	if Input.is_action_just_pressed("ctrl"):
-		GlobalHealth.damage_player(1)
-		%health_bar.update_health(GlobalHealth.current_hp)
+	%health_bar.update_health(GlobalHealth.current_hp)
+
+	# CURE PLAYER
+	if Input.is_action_just_pressed("shift"):
+		GlobalHealth.heal_player(1)
 		print(GlobalHealth.current_hp)
-	#
 	
 	look_at(get_global_mouse_position())
 	
