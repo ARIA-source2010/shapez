@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://d0bktaaw4rdai" path="res://scripts/globals/global_health.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dw8170hq1kq56" path="res://scenes/player/player.tscn" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://ba5vq13h4vgev" path="res://scenes/player/ui.tscn" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://dtnpxgu6myfw8" path="res://scripts/ui/health_bar.gd" id="3_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://c8p7fnv36suo2" path="res://resources/images/health_point.png" id="4_tbgi4"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_v88j6"]
 
@@ -23,4 +24,43 @@ mesh = SubResource("QuadMesh_v88j6")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=771949087]
 
-[node name="ui" parent="CanvasLayer" unique_id=1070843860 instance=ExtResource("3_sugp2")]
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=2040975384]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="health_bar" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=310464468]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.008017461
+anchor_bottom = 0.004762991
+offset_right = 256.7639
+offset_bottom = 46.91358
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_jyhfs")
+metadata/_edit_use_anchors_ = true
+
+[node name="1" type="TextureRect" parent="CanvasLayer/Control/health_bar" unique_id=2025453352]
+layout_mode = 2
+texture = ExtResource("4_tbgi4")
+
+[node name="2" type="TextureRect" parent="CanvasLayer/Control/health_bar" unique_id=2111154216]
+layout_mode = 2
+texture = ExtResource("4_tbgi4")
+
+[node name="3" type="TextureRect" parent="CanvasLayer/Control/health_bar" unique_id=124098937]
+layout_mode = 2
+texture = ExtResource("4_tbgi4")
+
+[node name="4" type="TextureRect" parent="CanvasLayer/Control/health_bar" unique_id=982665054]
+layout_mode = 2
+texture = ExtResource("4_tbgi4")
+
+[node name="5" type="TextureRect" parent="CanvasLayer/Control/health_bar" unique_id=1045726587]
+layout_mode = 2
+texture = ExtResource("4_tbgi4")

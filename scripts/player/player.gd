@@ -8,6 +8,7 @@ func _physics_process(_delta: float) -> void:
 	#
 	if Input.is_action_just_pressed("ctrl"):
 		GlobalHealth.damage_player(1)
+		%health_bar.update_health(GlobalHealth.current_hp)
 		print(GlobalHealth.current_hp)
 	#
 	

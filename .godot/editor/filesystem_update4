@@ -1,4 +1,3 @@
 res://scenes/main.tscn
-res://scripts/ui/health_bar.gd
-res://scenes/player/player.tscn
-res://scenes/player/ui.tscn
+res://scripts/globals/global_health.gd
+res://scripts/player/player.gd

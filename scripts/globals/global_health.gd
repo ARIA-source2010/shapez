@@ -1,7 +1,5 @@
 extends Node
 
-
-
 @export var max_hp : int  
 @export var current_hp : int
 
