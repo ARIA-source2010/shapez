@@ -25,5 +25,6 @@ func damage_player (hit_vlaue : int) :
 	else :
 		kill_player()
 
+
 func kill_player () :
 	get_tree().quit() 

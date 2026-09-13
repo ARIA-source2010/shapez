@@ -18,3 +18,5 @@ position = Vector2(1.4901161e-08, 1.4901161e-08)
 rotation = -1.5707964
 scale = Vector2(0.9963235, 0.9963235)
 polygon = PackedVector2Array(-17.1631, -17.1631, 16.962362, -17.1631, -0.10036939, 16.962362)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1388636761]

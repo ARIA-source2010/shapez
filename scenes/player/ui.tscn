@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ba5vq13h4vgev"]
+
+[ext_resource type="Script" uid="uid://dtnpxgu6myfw8" path="res://scripts/ui/health_bar.gd" id="1_4hxr3"]
+[ext_resource type="Texture2D" uid="uid://c8p7fnv36suo2" path="res://resources/images/health_point.png" id="2_pko1k"]
+
+[node name="ui" type="Control" unique_id=1070843860]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="health_bar" type="HBoxContainer" parent="." unique_id=1770143657]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.23090278
+anchor_bottom = 0.07716049
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4hxr3")
+metadata/_edit_use_anchors_ = true
+
+[node name="1" type="TextureRect" parent="health_bar" unique_id=121733967]
+layout_mode = 2
+texture = ExtResource("2_pko1k")
+
+[node name="2" type="TextureRect" parent="health_bar" unique_id=401284015]
+layout_mode = 2
+texture = ExtResource("2_pko1k")
+
+[node name="3" type="TextureRect" parent="health_bar" unique_id=1436923737]
+layout_mode = 2
+texture = ExtResource("2_pko1k")
+
+[node name="4" type="TextureRect" parent="health_bar" unique_id=278012843]
+layout_mode = 2
+texture = ExtResource("2_pko1k")
+
+[node name="5" type="TextureRect" parent="health_bar" unique_id=1170765153]
+layout_mode = 2
+texture = ExtResource("2_pko1k")
