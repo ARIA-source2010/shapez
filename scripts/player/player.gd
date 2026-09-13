@@ -1,11 +1,16 @@
 extends CharacterBody2D
 
-
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
 
 
 func _physics_process(_delta: float) -> void:
+	
+	#
+	if Input.is_action_just_pressed("ctrl"):
+		GlobalHealth.damage_player(1)
+		print(GlobalHealth.current_hp)
+	#
+	
 	look_at(get_global_mouse_position())
 	
 	var directiony := Input.get_axis("w", "s")

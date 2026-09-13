@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://bn0juasaoar15"]
 
+[ext_resource type="Script" uid="uid://d0bktaaw4rdai" path="res://scripts/globals/global_health.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dw8170hq1kq56" path="res://scenes/player/player.tscn" id="1_o5qli"]
 
 [node name="main" type="Node2D" unique_id=76861235]
+
+[node name="global_health" type="Node" parent="." unique_id=992605670]
+script = ExtResource("1_0wfyh")
+max_hp = 5
+current_hp = 5
 
 [node name="player" parent="." unique_id=835346114 instance=ExtResource("1_o5qli")]
 position = Vector2(515, 300)
